@@ -1,16 +1,14 @@
-package Employee;
+public class EmployeeTest {
+    public static void main(String[] args) {
+        Employee emp[] = new Employee[3];
 
-class EmployeeTest
-{
-    public static void main(String []args)
-    {
-        Employee []staff = new Employee[3];
-        staff[0] = new Employee("Adil" , 20000);
-        staff[1] = new Employee("Umar" , 24000);
-        staff[2] = new Employee("Arif" , 20430);
-        for(Employee e : staff)
-        {
-            System.out.println("Name :" + e.getName() + "\t Salary :" + e.getSalary() + "\n");
+        emp[0] = new Employee("Adil" , 60000);
+        emp[1] = new Employee("Arif" , 20000);
+        emp[2] = new Employee("Adnan" , 30000);
+
+        for(Employee e : emp) {
+            e.setId();
+            System.out.println("Employee_Id : " + e.getId() + "\tName : " + e.getName() + "\tSalary : " + e.getSalary());
         }
     }
 }
